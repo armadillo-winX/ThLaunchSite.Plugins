@@ -39,7 +39,7 @@ namespace AvailableGamesList
             { "Th19", "ìåï˚èbâ§âÄ" }
         };
 
-        private AvailableGamesDialog _availableGamesDialog = null;
+        private AvailableGamesDialog? _availableGamesDialog = null;
 
         public override void Main(List<string> availableGamesList, Dictionary<string, string> availableGameFilesDictionary)
         {
@@ -64,7 +64,9 @@ namespace AvailableGamesList
             }
             else
             {
-                _availableGamesDialog.AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
+                _availableGamesDialog.AvailableGamesNameFileDictionary = availableGamesNameFileDictionary;
+                _availableGamesDialog.WindowState = System.Windows.WindowState.Normal;
+                _availableGamesDialog.Activate();
             }
         }
     }

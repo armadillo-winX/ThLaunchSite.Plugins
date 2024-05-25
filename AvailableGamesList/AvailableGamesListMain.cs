@@ -64,6 +64,7 @@ namespace AvailableGamesList
             }
             else
             {
+                _availableGamesDialog.AvailableGamesNameFileDictionary = availableGamesNameFileDictionary;
                 _availableGamesDialog.WindowState = System.Windows.WindowState.Normal;
                 _availableGamesDialog.Activate();
             }

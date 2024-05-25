@@ -13,7 +13,7 @@ namespace AvailableGamesList
             InitializeComponent();
         }
 
-        public Dictionary<string, string>? AvailableGamesPathDictionary
+        public Dictionary<string, string>? AvailableGamesNameFileDictionary
         {
             set
             {

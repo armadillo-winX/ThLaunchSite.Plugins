@@ -53,7 +53,7 @@ namespace AvailableGamesList
 
             AvailableGamesDialog availableGamesDialog = new()
             {
-                AvailableGamesPathDictionary = availableGamesNameFileDictionary
+                AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
             };
 
             availableGamesDialog.ShowDialog();

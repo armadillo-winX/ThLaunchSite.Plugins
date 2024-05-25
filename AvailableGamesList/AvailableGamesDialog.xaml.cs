@@ -17,6 +17,8 @@ namespace AvailableGamesList
         {
             set
             {
+                AvailableGamesListBox.Items.Clear();
+
                 if (value != null && value.Count > 0)
                 {
                     foreach (KeyValuePair<string, string> gameNamePathPair in value)

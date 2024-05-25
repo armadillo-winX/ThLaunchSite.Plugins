@@ -55,12 +55,12 @@ namespace AvailableGamesList
 
             if (_availableGamesDialog == null || !_availableGamesDialog.IsLoaded)
             {
-                AvailableGamesDialog availableGamesDialog = new()
+                _availableGamesDialog = new()
                 {
                     AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
                 };
 
-                availableGamesDialog.Show();
+                _availableGamesDialog.Show();
             }
             else
             {

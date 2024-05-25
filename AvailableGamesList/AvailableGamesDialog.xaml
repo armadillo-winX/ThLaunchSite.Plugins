@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AvailableGamesList"
         mc:Ignorable="d"
-        Title="AvailableGamesDialog" Height="450" Width="800">
+        Title="有効なゲームの一覧" Height="244" Width="450" ResizeMode="NoResize" ShowInTaskbar="False">
     <Grid>
-        
+        <ListBox x:Name="AvailableGamesListBox"/>
+
     </Grid>
 </Window>

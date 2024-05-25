@@ -39,16 +39,26 @@ namespace GameInformation
             { "Th19", "東方獣王園" }
         };
 
+        GameInformationDialog? _gameInformationDialog = null;
+
         public override void Main(string gameId, string gameFile)
         {
-            GameInformationDialog gameInformationDialog = new()
+            if (_gameInformationDialog == null || !_gameInformationDialog.IsLoaded)
             {
-                GameId = gameId,
-                GameName = _gameNameDictionary[gameId],
-                GamePath = gameFile
-            };
+                _gameInformationDialog = new()
+                {
+                    GameId = gameId,
+                    GameName = _gameNameDictionary[gameId],
+                    GamePath = gameFile
+                };
 
-            gameInformationDialog.ShowDialog();
+                _gameInformationDialog.Show();
+            }
+            else
+            {
+                _gameInformationDialog.WindowState = System.Windows.WindowState.Normal;
+                _gameInformationDialog.Activate();
+            }
         }
     }
 }

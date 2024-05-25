@@ -39,6 +39,8 @@ namespace AvailableGamesList
             { "Th19", "ìåï˚èbâ§âÄ" }
         };
 
+        private AvailableGamesDialog _availableGamesDialog = null;
+
         public override void Main(List<string> availableGamesList, Dictionary<string, string> availableGameFilesDictionary)
         {
             Dictionary<string, string> availableGamesNameFileDictionary = [];
@@ -51,12 +53,19 @@ namespace AvailableGamesList
                 }
             }
 
-            AvailableGamesDialog availableGamesDialog = new()
+            if (_availableGamesDialog == null || !_availableGamesDialog.IsLoaded)
             {
-                AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
-            };
+                AvailableGamesDialog availableGamesDialog = new()
+                {
+                    AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
+                };
 
-            availableGamesDialog.ShowDialog();
+                availableGamesDialog.ShowDialog();
+            }
+            else
+            {
+                _availableGamesDialog.AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
+            }
         }
     }
 }

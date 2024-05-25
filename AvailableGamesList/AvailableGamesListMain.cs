@@ -47,7 +47,7 @@ namespace AvailableGamesList
             {
                 foreach (string gameId in availableGamesList)
                 {
-                    availableGamesNameFileDictionary.Add(gameId, availableGameFilesDictionary[gameId]);
+                    availableGamesNameFileDictionary.Add(_gameNameDictionary[gameId], availableGameFilesDictionary[gameId]);
                 }
             }
 

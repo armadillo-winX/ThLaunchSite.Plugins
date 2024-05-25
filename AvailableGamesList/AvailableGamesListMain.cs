@@ -60,7 +60,7 @@ namespace AvailableGamesList
                     AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
                 };
 
-                availableGamesDialog.ShowDialog();
+                availableGamesDialog.Show();
             }
             else
             {

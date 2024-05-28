@@ -1,3 +1,4 @@
+using System.Windows;
 using System.Collections.Generic;
 using ThLaunchSite.Plugin;
 
@@ -14,6 +15,8 @@ namespace AvailableGamesList
         public override string Description => "東方管制塔 NX にパスが登録されているゲームとその実行ファイルパスをリスト化します。";
 
         public override string CommandName => "有効なゲームの一覧";
+
+        public Window? MainWindow { get; set; }
 
         private readonly static Dictionary<string, string> _gameNameDictionary = new()
         {
@@ -59,6 +62,8 @@ namespace AvailableGamesList
                 {
                     AvailableGamesNameFileDictionary = availableGamesNameFileDictionary
                 };
+
+                if (this.MainWindow != null) _availableGamesDialog.Owner = this.MainWindow;
 
                 _availableGamesDialog.Show();
             }

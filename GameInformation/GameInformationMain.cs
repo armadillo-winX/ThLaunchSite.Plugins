@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Windows;
 using ThLaunchSite.Plugin;
 
 namespace GameInformation
@@ -14,6 +15,8 @@ namespace GameInformation
         public override string Description => "選択中のゲームについて簡易的に情報を提供します。";
 
         public override string CommandName => "このゲームについて";
+
+        public Window? MainWindow { get; set; }
 
         private readonly static Dictionary<string, string> _gameNameDictionary = new()
         {
@@ -51,6 +54,8 @@ namespace GameInformation
                     GameName = _gameNameDictionary[gameId],
                     GamePath = gameFile
                 };
+
+                if (this.MainWindow != null) _gameInformationDialog.Owner = this.MainWindow;
 
                 _gameInformationDialog.Show();
             }

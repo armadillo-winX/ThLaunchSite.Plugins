@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameInformation"
         mc:Ignorable="d"
-        Title="ゲームの情報" Height="196" Width="354" ResizeMode="NoResize" ShowInTaskbar="False">
+        Title="ゲームの情報" Height="196" Width="354" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner">
     <Grid>
         <Label Content="Game ID:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox 

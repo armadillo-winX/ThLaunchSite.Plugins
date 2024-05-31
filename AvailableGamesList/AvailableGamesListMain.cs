@@ -10,7 +10,7 @@ namespace AvailableGamesList
 
         public override string Version => "1.0.0";
 
-        public override string Developer => "Mashiro Tamane";
+        public override string Developer => "珠音茉白/東方管制塔開発部";
 
         public override string Description => "東方管制塔 NX にパスが登録されているゲームとその実行ファイルパスをリスト化します。";
 

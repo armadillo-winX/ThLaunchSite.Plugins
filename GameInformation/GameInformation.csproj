@@ -6,7 +6,7 @@
     <UseWPF>true</UseWPF>
     <ImplicitUsings>disable</ImplicitUsings>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
-	<Authors>Mashiro Tamane</Authors>
+	<Authors>珠音茉白/東方管制塔開発部</Authors>
 	<Product>東方管制塔 NX ゲーム情報プラグイン</Product>
 	<Copyright>Copyright © 2023 $(Authors)</Copyright>
 	<AssemblyVersion></AssemblyVersion>

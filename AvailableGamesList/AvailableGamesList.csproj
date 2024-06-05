@@ -8,7 +8,7 @@
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
 	<Authors>珠音茉白/東方管制塔開発部</Authors>
 	<Product>東方管制塔 NX 有効ゲームリスト化プラグイン</Product>
-	<Copyright>Copyright © 2023 $(Authors)</Copyright>
+	<Copyright>Copyright © 2024 $(Authors)</Copyright>
 	<AssemblyVersion></AssemblyVersion>
 	<FileVersion></FileVersion>
 	<Version>1.0.0</Version>
